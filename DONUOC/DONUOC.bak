@@ -1,0 +1,18 @@
+{Theo de bai, de tinh muc nuoc ngay thu n, do la so hang thu n cua cap so cong co cong sai la (b-a).
+Ket qua bai la a + (n-1) * (b-a).}
+
+CONST	fin = '9.INP';
+	fout = '9.OUT';
+VAR	a, b, n : INT64;
+	f	: TEXT;
+BEGIN
+	assign(f,fin);
+	reset(f);
+	readln(f,a,b);
+	read(f,n);
+	close(f);
+	assign(f,fout);
+	rewrite(f);
+	write(f, a + (n-1) * (b-a) );
+	close(f);
+END.
